@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components'
+import { useContext } from 'react';
+
+import Navigation from './routes/navigation/Navigation';
+import Home from './routes/home/Home';
+import Question from './routes/question/Question';
+
 import './App.css';
+import { themes } from './data/ThemeData';
+import { ThemeContext } from './contexts/themeContext';
+
+import GlobalStyle from './globalStyles';
 
 function App() {
+  const { theme: themeValue } = useContext(ThemeContext);
+  console.log(themeValue)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={themes[themeValue]}>
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="/question/:title" element={<Question />} />
+        </Route>
+      </Routes>
+    </ThemeProvider>
   );
 }
 
