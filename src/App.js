@@ -14,7 +14,6 @@ import GlobalStyle from './globalStyles';
 
 function App() {
   const { theme: themeValue } = useContext(ThemeContext);
-  console.log(themeValue)
   return (
     <ThemeProvider theme={themes[themeValue]}>
       <GlobalStyle />

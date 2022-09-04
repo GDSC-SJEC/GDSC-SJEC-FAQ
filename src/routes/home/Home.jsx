@@ -4,6 +4,7 @@ import {
 	SearchContainer,
 	SearchText,
 	SearchInput,
+	SearchInputContainer,
 	ExpandedSearch,
 	FilteredQuestion,
 	ErrorText,
@@ -36,23 +37,25 @@ const Home = () => {
 		<>
 			<SearchContainer>
 				<SearchText>How can we help you?</SearchText>
-				<SearchInput
-					type='text'
-					placeholder='Enter your query'
-					value={searchValue}
-					onChange={handleSearch}
-				/>
-				{dropdownVisible ? (
-					<ExpandedSearch>
-						{filteredQuestions.map((question) => (
-							<FilteredQuestion to={question.link}>
-								{question.title}
-							</FilteredQuestion>
-						))}
-					</ExpandedSearch>
-				) : (
-					<></>
-				)}
+				<SearchInputContainer>
+					<SearchInput
+						type='text'
+						placeholder='Enter your query'
+						value={searchValue}
+						onChange={handleSearch}
+					/>
+					{dropdownVisible ? (
+						<ExpandedSearch>
+							{filteredQuestions.map((question) => (
+								<FilteredQuestion to={question.link}>
+									{question.title}
+								</FilteredQuestion>
+							))}
+						</ExpandedSearch>
+					) : (
+						<></>
+					)}
+				</SearchInputContainer>
 
 				<ErrorText>
 					Couldn't find what you're looking for? Get in touch with us!

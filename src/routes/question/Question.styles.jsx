@@ -14,7 +14,7 @@ export const QuestionContainer = styled.div`
 
 	transition: all ease-in-out 200ms;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1268px) {
 		padding: 1rem 2rem;
 		display: block;
 	}
@@ -23,7 +23,7 @@ export const QuestionContainer = styled.div`
 export const Container = styled.div`
 	width: 50%;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1268px) {
 		width: 100%;
 	}
 `;
@@ -34,6 +34,8 @@ export const VideoTitle = styled.div`
 	font-weight: bold;
 `;
 
-export const Video = styled.video`
+export const Video = styled.iframe`
 	min-width: 100%;
+	min-height: 400px;
+	border: 0;
 `;

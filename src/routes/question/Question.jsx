@@ -36,11 +36,14 @@ const Question = () => {
 				</Container>
 				<Container>
 					<VideoTitle>Video Tutorial</VideoTitle>
-					{item.video_path || item.video_path?.length !== 0 ? (
-						<Video controls>
-							<source src={item.video_path} type='video/mp4' />
-							Sorry, your browser doesn't support embedded videos.
-						</Video>
+					{item.video_url || item.video_url?.length !== 0 ? (
+						<Video
+							src={item.video_url}
+							title='YouTube video player'
+							frameborder='0'
+							allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+							allowfullscreen
+						></Video>
 					) : (
 						<p>No video found.</p>
 					)}

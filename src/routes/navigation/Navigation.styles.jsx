@@ -10,7 +10,7 @@ export const NavigationContainer = styled.div`
 
 	transition: all ease-in-out 200ms;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1268px) {
 		padding: 2rem 2rem;
 	}
 `;

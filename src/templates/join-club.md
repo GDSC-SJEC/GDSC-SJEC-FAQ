@@ -2,7 +2,7 @@
 
 ## Step 1:
 
-Go to the following URL: https://join.gdscsjec.in
+Go to the following URL: <a href="https://join.gdscsjec.in" target="_blank">join.gdscsjec.in</a>
 
 ## Step 2:
 

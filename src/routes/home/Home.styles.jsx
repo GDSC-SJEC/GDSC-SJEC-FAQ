@@ -27,6 +27,10 @@ export const SearchText = styled.div`
 	}
 `;
 
+export const SearchInputContainer = styled.div`
+	position: relative;
+`;
+
 export const SearchInput = styled.input`
 	width: 600px;
 	height: 50px;
@@ -49,11 +53,11 @@ export const ExpandedSearch = styled.div`
 	width: 600px;
 	background-color: #fff;
 	position: absolute;
-	bottom: 64px;
+	left: 50%;
+	transform: translateX(-50%);
 
 	@media (max-width: 768px) {
 		width: 250px;
-		bottom: 91px;
 	}
 `;
 
@@ -68,6 +72,10 @@ export const FilteredQuestion = styled(Link)`
 
 	&:hover {
 		background-color: #f5f5f5;
+	}
+
+	@media (max-width: 768px) {
+		width: 240px;
 	}
 `;
 
