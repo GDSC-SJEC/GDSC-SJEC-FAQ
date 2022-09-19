@@ -1,22 +1,28 @@
 {
-  "questions": [
-    {
-      "title": "How do I join the club?",
-      "link": "/question/join-club",
-      "markdown_name": "join-club",
-      "video_url": "https://www.youtube.com/embed/L_PPZvYlVyk"
-    },
-    {
-      "title": "How do I join an event?",
-      "link": "/question/join-event",
-      "markdown_name": "join-event",
-      "video_url": "https://www.youtube.com/embed/FF0vD4Ud-B8"
-    },
-    {
-      "title": "When will the interviews process begin?",
-      "link": "/question/interview-process",
-      "markdown_name": "interview-process",
-      "video_url": ""
-    }
-  ]
+	"questions": [
+		{
+			"title": "How do I join the club?",
+			"link": "/question/join-club",
+			"markdown_name": "join-club",
+			"video_url": "https://www.youtube.com/embed/L_PPZvYlVyk"
+		},
+		{
+			"title": "How do I join an event?",
+			"link": "/question/join-event",
+			"markdown_name": "join-event",
+			"video_url": "https://www.youtube.com/embed/FF0vD4Ud-B8"
+		},
+		{
+			"title": "When will the interviews process begin?",
+			"link": "/question/interview-process",
+			"markdown_name": "interview-process",
+			"video_url": ""
+		},
+		{
+			"title": "How to make use of GDSC Discord and Bot?",
+			"link": "/question/discord-bot",
+			"markdown_name": "discord-bot",
+			"video_url": "https://www.youtube.com/embed/ffnnSqlbtZU"
+		}
+	]
 }
